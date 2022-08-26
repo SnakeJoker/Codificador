@@ -1,0 +1,139 @@
+* {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+}
+
+textarea {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	line-height: 150%;
+	font-style: #0a3871;
+}
+
+body {
+	background-image: url(imagenes/ezgif.com-gif-maker.gif);
+	margin: 10px;
+}
+
+main {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.input-texto {
+	text-align: justify;
+	font-style: normal;
+	color: #0a3871;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 150%;
+	position: absolute;
+	display: flex;
+	margin-top: 130px;
+	margin-left: 250px;
+	width: 500px;
+	height: 400px;
+	background-color: #f3f5fc;
+	border-color: #f3f5fc;
+	padding: 50px;
+}
+
+::placeholder {
+	color: #0a3871;
+}
+
+.mensaje {
+	margin: 10px;
+	text-align: justify;
+	line-height: 25px;
+	font-weight: 400px;
+	position: relative;
+	margin:  40px 40px 0px 1000px;
+	background-image: url("imagenes/Muneno-completo.png");
+	background-repeat: no-repeat;
+	background-size: 300px;
+	background-position-x: 0px;
+	background-position-y: 190px;
+	width: 300px;
+	height: 700px;
+	font-display: none;
+	font-size: 15px;
+	border-width: 40px 40px 131px 40px;
+	border-radius: 32px;
+	border-color: white;
+	padding: 32 32 131 32;
+}
+
+.copiar {
+	font-weight: bold;
+	background: #ffffff;
+	display: block;
+	font-size: 16px;
+	line-height: 19.36px;
+	position: absolute;
+	margin-top: -110px;
+	margin-left: 1030px;
+	width: 328px;
+	height: 67px;
+	border-radius: 24px;
+	border-color: #0a3871;
+	border-width: 1px;
+}
+
+label{
+	color: white;
+	font-size: 13px;
+	position: absolute;
+	margin-top: 780px;
+	margin-left: 230px;
+}
+
+.vector{
+	position: absolute;
+	margin-top: 782px;
+	margin-left: 205px;
+}
+
+.botones {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19.36px;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	margin-top: 820px;
+	margin-left: 200px;
+}
+
+.encriptar {
+	border-color: #0a3871;
+	background-color: #0a3871;
+	color: white;
+	border-radius: 24px;
+	width: 328px;
+	height: 67px;
+}
+
+.desencriptar {
+	border-color: #0a3871;
+	border-width: 1px;
+	background-color: #d8dfe8;
+	color: #0a3871;
+	margin-left: 40px;
+	border-radius: 24px;
+	width: 328px;
+	height: 67px;
+}
+
+.logo {
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+.informacion {
+	font-size: 15px;
+}
