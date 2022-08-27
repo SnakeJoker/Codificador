@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=devide-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="Styles/reset.css" />
 		<link rel="stylesheet" href="style.css" />
 		<title>Encriptador</title>
 	</head>
@@ -11,17 +12,18 @@
 		<header>
 			<img
 				class="logo"
-				src="imagenes/logoalura.png"
+				src="imagenes/el-capitan.png"
 				alt="Logo de alura hecho con la letra a"
 			/>
 		</header>
 		<main>
-			<section>
+			<section class="sec1">
+				<img src="imagenes/Sin título-4.png" alt="referenci mas os x" class="barra">
 				<textarea
 					class="input-texto"
 					cols="5"
 					rows="5"
-					placeholder="Ingrese el texto en esta area"
+					placeholder="Texto a encriptar o desencriptar."
 				></textarea>
 				<div class="botones">
 					<img src="imagenes/Vector.png" class="vector" />
@@ -32,16 +34,16 @@
 					</button>
 				</div>
 			</section>
-
 			<section>
-				<textarea 
-				class="mensaje" 
-				cols="5" 
-				rows="5"
-				></textarea>
+			</section>
+			<section class="mensajecontainer">
+				<textarea class="mensaje" cols="5" rows="5"></textarea>
 				<button class="copiar" id="copiar" onclick="copiar()">Copiar</button>
 			</section>
 		</main>
-		<script src="script.js"></script>
+		<script src="JS/script.js"></script>
+		<footer>
+			<p>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+		</footer>
 	</body>
 </html>

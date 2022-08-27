@@ -1,19 +1,16 @@
-* {
-	font-family: "Inter", sans-serif;
+@font-face {
+	font-family: "San Francisco";
 	font-weight: 400;
-	font-size: 20px;
-	line-height: 150%;
+	src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
 textarea {
-	font-family: "Inter", sans-serif;
 	font-weight: 400;
 	line-height: 150%;
-	font-style: #0a3871;
 }
 
 body {
-	background: #f3f5fc;
+	background-image: url(imagenes/macos-big-sur-2560x1440-dark-wwdc-2020-22655.jpg);
 	margin: 10px;
 }
 
@@ -24,116 +21,316 @@ main {
 }
 
 .input-texto {
+	outline: none;
+	resize: none;
 	text-align: justify;
 	font-style: normal;
-	color: #0a3871;
 	font-size: 32px;
 	font-weight: 400;
 	line-height: 150%;
 	position: absolute;
 	display: flex;
-	margin-top: 130px;
-	margin-left: 250px;
-	width: 500px;
-	height: 400px;
-	background-color: #f3f5fc;
-	border-color: #f3f5fc;
+	z-index: 5;
+	top: 196px;
+	left: 172px;
+	width: 620px;
+	height: 350px;
+	background-color: #e3e3e3;
+	border-color: #ececec;
+	border-width: 40px 30px 100px 30px;
 	padding: 50px;
-}
-
-::placeholder {
-	color: #0a3871;
+	border-radius: 10px;
 }
 
 .mensaje {
+	resize: none;
 	margin: 10px;
 	text-align: justify;
 	line-height: 25px;
 	font-weight: 400px;
 	position: relative;
-	margin:  40px 40px 0px 1000px;
-	background-image: url("imagenes/Muneno-completo.jpg");
+	z-index: 5;
+	top: 30px;
+	left: 965px;
+	background-image: url("imagenes/casa-completo.png");
 	background-repeat: no-repeat;
 	background-size: 300px;
 	background-position-x: 0px;
 	background-position-y: 190px;
 	width: 300px;
-	height: 700px;
+	height: 695px;
 	font-display: none;
 	font-size: 15px;
 	border-width: 40px 40px 131px 40px;
-	border-radius: 32px;
-	border-color: white;
+	border-radius: 10px;
+	border-color: #ececec;
 	padding: 32 32 131 32;
+	background-color: #e3e3e3;
+}
+
+#p0 {
+	width: 80%;
+	text-align: left;
+	word-break: break-word;
+	margin: 10px auto;
 }
 
 .copiar {
+	color: white;
 	font-weight: bold;
-	background: #ffffff;
+	background-color: #1286ff;
 	display: block;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 19.36px;
 	position: absolute;
-	margin-top: -110px;
-	margin-left: 1030px;
-	width: 328px;
-	height: 67px;
-	border-radius: 24px;
-	border-color: #0a3871;
+	z-index: 6;
+	top: 820px;
+	left: 1060px;
+	margin: 10px;
+	width: 250px;
+	height: 45px;
+	border-radius: 10px;
+	border-color: #1286ff;
 	border-width: 1px;
 }
 
-label{
-	color: white;
-	font-size: 13px;
+.botones label {
+	color: black;
+	font-size: 11px;
 	position: absolute;
-	margin-top: 780px;
-	margin-left: 230px;
+	z-index: 9;
+	top: 694px;
+	left: 230px;
 }
 
-.vector{
+.vector {
 	position: absolute;
-	margin-top: 782px;
-	margin-left: 205px;
+	z-index: 9;
+	top: 695px;
+	left: 210px;
 }
 
 .botones {
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 19.36px;
-	position: absolute;
 	display: flex;
 	flex-direction: row;
-	margin-top: 820px;
-	margin-left: 200px;
 }
 
 .encriptar {
-	border-color: #0a3871;
-	background-color: #0a3871;
-	color: white;
-	border-radius: 24px;
-	width: 328px;
-	height: 67px;
+	font-weight: bold;
+	border-color: #e3e3e3;
+	background-color: #e3e3e3;
+	color: black;
+	border-radius: 10px;
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	z-index: 6;
+	top: 720px;
+	left: 460px;
 }
 
 .desencriptar {
-	border-color: #0a3871;
+	font-weight: bold;
+	border-color: #1286ff;
 	border-width: 1px;
-	background-color: #d8dfe8;
-	color: #0a3871;
-	margin-left: 40px;
-	border-radius: 24px;
-	width: 328px;
-	height: 67px;
+	background-color: #1286ff;
+	color: white;
+	border-radius: 10px;
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	z-index: 6;
+	top: 720px;
+	left: 700px;
 }
 
 .logo {
+	zoom: 15%;
 	position: absolute;
-	margin-left: 100px;
-	margin-top: 20px;
+	top: 150px;
+	left: 200px;
+}
+
+.barra {
+	zoom: 65%;
+	position: absolute;
+	z-index: 10;
+	top: 245px;
+	left: 265px;
+	border-style: solid;
+	border-width: 0px -10px -10px 0px;
+	border-color: #bfbfbf;
+	border-radius: 5px;
 }
 
 .informacion {
 	font-size: 15px;
+}
+
+footer p{
+	display: none;
+}
+
+@media screen and (max-width: 1300px) {
+	
+	body{
+		background-image: url(imagenes/responsive.jpg);
+		background-size: 180%;
+	}
+	.mensaje {
+		margin: 10px 10px 100px 105px;
+		position: relative;
+		z-index: 5;
+		top: 850px;
+		left: -60px;
+		background-image: url("imagenes/casa-completo.png");
+		background-size: 250px;
+		background-position-x: 230px;
+		background-position-y: 0px;
+		width: 690px;
+		height: 400px;
+	}
+
+	.input-texto {
+		position: absolute;
+		display: flex;
+		z-index: 5;
+		top: 196px;
+		left: 65px;
+		width: 620px;
+		height: 350px;
+	}
+
+	.encriptar {
+		position: absolute;
+		z-index: 6;
+		top: 720px;
+		left: 200px;
+	}
+
+	.desencriptar {
+		position: absolute;
+		z-index: 6;
+		top: 720px;
+		left: 500px;
+	}
+
+	.barra {
+		zoom: 65%;
+		position: absolute;
+		z-index: 10;
+		top: 245px;
+		left: 100px;
+	}
+
+	footer p{
+		position: relative; top: 800px;
+		display: block;
+	}
+
+	.copiar {
+		position: absolute;
+		z-index: 6;
+		top: 1330px;
+		left: 320px;
+	}
+
+	.botones label {
+		position: absolute;
+		z-index: 9;
+		top: 694px;
+		left: 120px;
+	}
+	
+	.vector {
+		position: absolute;
+		z-index: 9;
+		top: 695px;
+		left: 100px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body{
+		background-image: url(imagenes/responsive.jpg);
+		background-size: 260%;
+	}
+	.mensaje {
+		margin: 10px 10px 450px 90px;
+		position: relative;
+		z-index: 5;
+		top: 1160px;
+		left: -47px;
+		background-image: url("imagenes/casa-completo.png");
+		background-size: 250px;
+		background-position-x: 70px;
+		background-position-y: 90px;
+		width: 375px;
+		height: 600px;
+	}
+
+	.input-texto {
+		position: absolute;
+		display: flex;
+		z-index: 5;
+		top: 196px;
+		left: 65px;
+		width: 300px;
+		height: 600px;
+		border-width: 40px 30px 200px 30px;
+	}
+
+	.encriptar {
+		position: absolute;
+		z-index: 6;
+		top: 990px;
+		left: 190px;
+	}
+
+	.desencriptar {
+		position: absolute;
+		z-index: 6;
+		top: 1050px;
+		left: 190px;
+	}
+
+	.barra {
+		zoom: 38.5%;
+		position: absolute;
+		z-index: 10;
+		top: 455px;
+		left: 169px;
+	}
+
+	footer p{
+		position: relative; top: 800px;
+		display: block;
+	}
+
+	.copiar {
+		position: absolute;
+		z-index: 6;
+		top: 1860px;
+		left: 165px;
+	}
+
+	.botones label {
+		color: black;
+		font-size: 11px;
+		position: absolute;
+		z-index: 9;
+		top: 945px;
+		left: 230px;
+	}
+	
+	.vector {
+		position: absolute;
+		z-index: 9;
+		top: 950px;
+		left: 210px;
+	}
+
 }
