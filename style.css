@@ -167,9 +167,10 @@ main {
 	font-size: 15px;
 }
 
-footer{
+footer {
 	text-align: center;
-	position: relative; z-index: 20;
+	position: relative;
+	z-index: 20;
 	background-color: black;
 	color: white;
 	display: flex;
@@ -203,11 +204,11 @@ footer h3 {
 	margin-top: 10px;
 }
 
-.txtm{
+.txtm {
 	display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 	body {
 		background-image: url(imagenes/responsive.jpg);
 		background-size: 180%;
@@ -279,21 +280,25 @@ footer h3 {
 		left: 100px;
 	}
 
-	main{
+	main {
 		display: block;
 		margin-left: 0px;
 		margin-right: 0px;
 	}
 
-	footer{
+	footer {
+		display: flex;
 		z-index: 20;
 		top: 800px;
 		left: 40px;
 	}
 
-	.txtm{
+	.txtm {
 		display: block;
-		position: absolute; z-index: -1; top: 0px; left: -40px;
+		position: absolute;
+		z-index: -1;
+		top: 0px;
+		left: -40px;
 		background-color: black;
 		resize: none;
 		border-color: black;
@@ -365,27 +370,30 @@ footer h3 {
 		font-size: 11px;
 		position: absolute;
 		z-index: 9;
-		top: 945px;
-		left: 230px;
+		top: 948px;
+		left: 200px;
 	}
 
 	.vector {
 		position: absolute;
 		z-index: 9;
 		top: 950px;
-		left: 210px;
+		left: 180px;
 	}
 
-	footer{
+	footer {
+		display: flex;
 		z-index: 20;
 		top: 908px;
 		left: 90px;
 	}
 
-	.txtm{
+	.txtm {
 		display: block;
-		position:
-		absolute; z-index: -1; top: 0px; left: -100px;
+		position: absolute;
+		z-index: -1;
+		top: 0px;
+		left: -100px;
 		background-color: black;
 		resize: none;
 		border-color: black;
