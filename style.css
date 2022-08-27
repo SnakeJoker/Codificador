@@ -11,13 +11,10 @@ textarea {
 
 body {
 	background-image: url(imagenes/macos-big-sur-2560x1440-dark-wwdc-2020-22655.jpg);
-	margin: 10px;
 }
 
 main {
 	display: flex;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .input-texto {
@@ -170,22 +167,57 @@ main {
 	font-size: 15px;
 }
 
-footer p{
+footer{
+	text-align: center;
+	position: relative; z-index: 20;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 3em;
+	padding: 2em 0;
+	filter: drop-shadow(-20px 0 20px rgba(0, 0, 0, 0.5));
+}
+
+footer .fp2 {
 	display: none;
 }
 
-@media screen and (max-width: 1300px) {
-	
-	body{
+footer .fp {
+	font-size: 15pt;
+	margin-top: 3px;
+	color: rgba(255, 255, 255, 0.6);
+	font-style: italic;
+}
+
+footer h3 {
+	font-family: "Poppins";
+	font-size: 17pt;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.redes-sociais {
+	margin-top: 10px;
+}
+
+.txtm{
+	display: none;
+}
+
+@media screen and (max-width: 1200px) {
+	body {
 		background-image: url(imagenes/responsive.jpg);
 		background-size: 180%;
 	}
 	.mensaje {
-		margin: 10px 10px 100px 105px;
+		margin: 10px 10px 100px 100px;
 		position: relative;
 		z-index: 5;
 		top: 850px;
-		left: -60px;
+		left: -45px;
 		background-image: url("imagenes/casa-completo.png");
 		background-size: 250px;
 		background-position-x: 230px;
@@ -226,11 +258,6 @@ footer p{
 		left: 100px;
 	}
 
-	footer p{
-		position: relative; top: 800px;
-		display: block;
-	}
-
 	.copiar {
 		position: absolute;
 		z-index: 6;
@@ -244,26 +271,47 @@ footer p{
 		top: 694px;
 		left: 120px;
 	}
-	
+
 	.vector {
 		position: absolute;
 		z-index: 9;
 		top: 695px;
 		left: 100px;
 	}
+
+	main{
+		display: block;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	footer{
+		z-index: 20;
+		top: 800px;
+		left: 40px;
+	}
+
+	.txtm{
+		display: block;
+		position: absolute; z-index: -1; top: 0px; left: -40px;
+		background-color: black;
+		resize: none;
+		border-color: black;
+		border-width: 100px 864.5px 35px 0px;
+	}
 }
 
-@media screen and (max-width: 480px) {
-	body{
+@media screen and (max-width: 550px) {
+	body {
 		background-image: url(imagenes/responsive.jpg);
 		background-size: 260%;
 	}
 	.mensaje {
-		margin: 10px 10px 450px 90px;
+		margin: 10px 10px 450px 100px;
 		position: relative;
 		z-index: 5;
 		top: 1160px;
-		left: -47px;
+		left: -37px;
 		background-image: url("imagenes/casa-completo.png");
 		background-size: 250px;
 		background-position-x: 70px;
@@ -305,11 +353,6 @@ footer p{
 		left: 169px;
 	}
 
-	footer p{
-		position: relative; top: 800px;
-		display: block;
-	}
-
 	.copiar {
 		position: absolute;
 		z-index: 6;
@@ -325,7 +368,7 @@ footer p{
 		top: 945px;
 		left: 230px;
 	}
-	
+
 	.vector {
 		position: absolute;
 		z-index: 9;
@@ -333,4 +376,19 @@ footer p{
 		left: 210px;
 	}
 
+	footer{
+		z-index: 20;
+		top: 908px;
+		left: 90px;
+	}
+
+	.txtm{
+		display: block;
+		position:
+		absolute; z-index: -1; top: 0px; left: -100px;
+		background-color: black;
+		resize: none;
+		border-color: black;
+		border-width: 100px 250px 100px 330px;
+	}
 }
