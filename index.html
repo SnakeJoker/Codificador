@@ -16,30 +16,34 @@
 				alt="Logo de alura hecho con la letra a"
 			/>
 		</header>
-		<main>
+		<main class="centro">
 			<section class="sec1">
 				<img
-					src="imagenes/Sin título-4.png"
-					alt="referenci mas os x"
-					class="barra"
+					class="banner"
+					src="/imagenes/Sin título-4.png"
+					alt="barra descriptiva"
 				/>
 				<textarea
 					class="input-texto"
-					cols="5"
-					rows="5"
+					cols="25"
+					rows="15"
 					placeholder="Texto a encriptar o desencriptar."
 				></textarea>
 				<div class="botones">
-					<img src="imagenes/Vector.png" class="vector" />
-					<label for="botones">Solo letras minusculas y sin acentos.</label>
-					<button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
-					<button class="desencriptar" onclick="btnDesencriptar()">
-						Desencriptar
-					</button>
+					<div class="botones-text">
+						<img src="imagenes/Vector.png" class="vector" />
+						<label for="botones">Solo letras minusculas y sin acentos.</label>
+					</div>
+					<div class="botones-botones">
+						<button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+						<button class="desencriptar" onclick="btnDesencriptar()">
+							Desencriptar
+						</button>
+					</div>
 				</div>
 			</section>
-			<section class="mensajecontainer">
-				<textarea class="mensaje" cols="5" rows="5"></textarea>
+			<section class="sec2">
+				<textarea class="mensaje" cols="30" rows="30"></textarea>
 				<button class="copiar" id="copiar" onclick="copiar()">Copiar</button>
 			</section>
 		</main>
@@ -47,11 +51,7 @@
 			<div class="footerlook">
 				<p class="fp">Creado por:</p>
 				<h3>SnakeJoker / Stephan Jimenez</h3>
-				<textarea
-					class="txtm"
-					cols="1px"
-					rows="1px"
-				></textarea>
+				<textarea class="txtm" cols="1px" rows="1px"></textarea>
 				<div class="redes-sociais">
 					<a href="https://github.com/SnakeJoker"
 						><img
@@ -65,6 +65,7 @@
 							alt="linkedin"
 					/></a>
 				</div>
+				<p class="fp2">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
 			</div>
 		</footer>
 		<script src="JS/script.js"></script>
