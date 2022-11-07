@@ -204,12 +204,11 @@ footer h3 {
 }
 
 @media screen and (max-width: 830px) {
-
 	body {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		background-image: url(imagenes/responsive.jpg);
+		background-image: url("imagenes/responsive.jpg");
 		background-size: 180%;
 	}
 	.logo {
@@ -254,9 +253,9 @@ footer h3 {
 		width: 90%;
 		height: 230px;
 		margin: 0 0 0 0;
-		background-image: url("/imagenes/Frame5.png");
-		background-position-y: 9px;
-		background-size: 110%;
+		background-image: url("imagenes/completo-nomuneno.png");
+		background-position-y: 2px;
+		background-size: 140%;
 		border-width: 30px 30px 70px 30px;
 		background-color: #ffffff;
 		border-color: #ffffff;
@@ -270,19 +269,18 @@ footer h3 {
 
 	footer {
 		display: flex;
-		
+
 		width: 100%;
 		margin: 40px 0 0 0;
 	}
 }
 
 @media screen and (max-width: 450px) {
-	
 	body {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		background-image: url(imagenes/responsive.jpg);
+		background-image: url("imagenes/responsive.jpg");
 		background-size: 150%;
 	}
 	.logo {
@@ -327,8 +325,8 @@ footer h3 {
 		width: 90%;
 		height: 200px;
 		margin: 40px 0 0 0;
-		background-image: url("/imagenes/Frame5.png");
-		background-position-y: 9px;
+		background-image: url("imagenes/completo-nomuneno.png");
+		background-position-y: 15px;
 		background-size: 180%;
 		border-width: 30px 30px 70px 30px;
 		border-color: #ffffff;
