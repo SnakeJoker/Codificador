@@ -81,7 +81,6 @@ function copiar() {
 	navigator.clipboard.writeText(mensaje1);
 	inputTexto.value = "";
 	mensaje.value = "";
-	location.reload();
 }
 
 setInterval(ocultarBoton, 10);
