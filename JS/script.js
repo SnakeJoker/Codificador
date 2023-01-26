@@ -13,7 +13,7 @@ comprovar = 1;
 function ocultarBoton() {
 	if (comprovar == 0) {
 		ocultarB = document.getElementById("copiar").style.display = "block";
-	} else if (comprovar == 1) {
+	} else {
 		ocultarB = document.getElementById("copiar").style.display = "none";
 	}
 }
